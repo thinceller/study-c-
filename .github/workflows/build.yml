@@ -11,5 +11,7 @@ jobs:
     - uses: actions/checkout@v1
     - name: Run a one-line script
       run: echo Hello, world!
-    - name: Check g++
-      run: which g++
+    - name: Build file
+      run: g++ main.cpp -o main
+    - name: Run the binary
+      run: ./main
