@@ -15,3 +15,5 @@ jobs:
       run: g++ main.cpp -o main
     - name: Run the binary
       run: ./main
+    - name: Check ssh
+      run: which ssh
