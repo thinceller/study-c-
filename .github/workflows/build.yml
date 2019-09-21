@@ -11,9 +11,5 @@ jobs:
     - uses: actions/checkout@v1
     - name: Run a one-line script
       run: echo Hello, world!
-    - name: Build file
-      run: g++ main.cpp -o main
-    - name: Run the binary
-      run: ./main
-    - name: Check ssh
-      run: which ssh
+    - name: Run the program
+      run: make run
